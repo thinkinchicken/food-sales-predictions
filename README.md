@@ -63,6 +63,29 @@ error is to be expected from each of these models.
 
 ## Results 
 
+A couple of hyperparameters needed to be altered for the Random Forest model/Decision Tree model in order for it to have the highest R2 value. 
+We ran a function in order to see the max depth of the tree that would optimize our R2 value and we found it to be max_depth = 5. 
+
+Figure 6: Max Depth optimization for Random Forest/Decision Tree Model 
+
+![image](https://user-images.githubusercontent.com/89652123/136722850-51052382-c9e4-4872-828d-10008a611b77.png)
+
+Lastly, just out of curiosity, I look into the top features based off of importance in the Random Forests model. 
+We see that the values are pretty darn similar to the correlations we looked at before where Item_MRP is clearly the strongest
+in predicting Item Sales. 
+
+Figure 7: Top 10 Feature Importance for the Random Forest Model
+
+![image](https://user-images.githubusercontent.com/89652123/136722967-275032f4-70e4-4482-bebb-8eb9eca51c69.png)
+
+
 Once we have run through all 4 models, we find that although not perfect in it's predictions and not optimal, the Random Forests model is the best 
-fit for predicting sales in comparison to the other 3 models. 
+fit for predicting sales in comparison to the other 3 models. Both the Decision Tree and Random Forest model show promise in the R2 values, but the Random Forest is 
+ever so slightly better. Although they aren't perfect, the training and test scores for these models are relatively close, which suggests that predicting on the
+test set is pretty on par with the training set. These two models(Regression decision tree & Random forests) also do much better than the simple linear regression model, 
+where the R2 value for the test set proved it was unsuccessful at predictions. We can say that from the random forests model, that 60% of the variation within
+the prediction in the item_outlet_sales can be accounted for by the features we selected for this model. 
+In addition, we can say that the variation in error on any predictions made off of this model, given by the RMSE is about plus or minus $667 in item sales. 
+
+
 
