@@ -1,7 +1,7 @@
 # Food Sales Predictions
 ## Overview
 Sales prediction for food items sold at various grocery and supermarket stores. 
-In this workbook, we will be exploring the data from supermarket and grocery stores and then seeing if we can train models to predict sales off of this current data set using several different methods. We will also evaluate which model is best at predicting said sales off of the given features. 
+In this workbook, we will be exploring the data from supermarket and grocery stores and seeing if we can train models to predict sales off of this current data set using several different methods. We will also evaluate which model is best at predicting said sales off of the given features. We will also need to evaluate which features are the most important in these models. 
 
 ## Exploring the data
 We first need to better understand the data and make sure that the data is clean and ready to be analyzed. Once that is done, we need to see if there are 
@@ -9,12 +9,18 @@ any strong relationships or correlations amongst the different attributes found 
 Below is an example of the columns and the type of data we are looking at:
 ![image](https://user-images.githubusercontent.com/89652123/136720728-5fded79e-7588-417e-a575-f4228af265dc.png)
 As mentioned above, there was a need to make sure that the data was clean and ready to work with. 
-We ran a couple diagnostic code to make sure everything was ready to go. 
-We then start plotting to get a better visual idea of the data. 
-Figure 1: We start with Histograms to see if there is anything interesting in the frequency distribution of some of this data. 
-Nothing too interesting from these histograms.
+We ran a couple diagnostic codes to make sure everything was ready to go and there weren't any duplicates and that each of the columns were the correct data type
+according to the data dictionary. 
+We then start plotting to get a better visual idea of the data.
 
-![image](https://user-images.githubusercontent.com/89652123/136720847-f9511553-c191-4468-a09d-b38215d931ca.png)
+Figure 1 - A),B),C): We start with Histograms to see if there is anything interesting in the frequency distribution of some of this data. 
+Nothing too interesting from these histograms
+
+![image](https://user-images.githubusercontent.com/89652123/136722025-617a0870-2995-4831-82e1-eb79c56b192e.png)
+
+![image](https://user-images.githubusercontent.com/89652123/136722064-7ba705ed-1572-4ef9-b14d-e0e56cf595ff.png)
+
+![image](https://user-images.githubusercontent.com/89652123/136722087-ffca4a85-2ca0-4b32-b90e-46cc16ad4bbe.png)
 
 So we move onto some boxplots to see if there may be some outliers in some of these quantitative data.
 
@@ -57,4 +63,6 @@ error is to be expected from each of these models.
 
 ## Results 
 
+Once we have run through all 4 models, we find that although not perfect in it's predictions and not optimal, the Random Forests model is the best 
+fit for predicting sales in comparison to the other 3 models. 
 
