@@ -79,6 +79,8 @@ Figure 7: Top 10 Feature Importance for the Random Forest Model
 ![image](https://user-images.githubusercontent.com/89652123/136722967-275032f4-70e4-4482-bebb-8eb9eca51c69.png)
 
 
+## Conclusion
+
 Once we have run through all 4 models, we find that although not perfect in it's predictions and not optimal, the Random Forests model is the best 
 fit for predicting sales in comparison to the other 3 models. Both the Decision Tree and Random Forest model show promise in the R2 values, but the Random Forest is 
 ever so slightly better. Although they aren't perfect, the training and test scores for these models are relatively close, which suggests that predicting on the
