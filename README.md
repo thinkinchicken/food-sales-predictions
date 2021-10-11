@@ -1,7 +1,7 @@
 # Food Sales Predictions
 ## Overview
 Sales prediction for food items sold at various grocery and supermarket stores. 
-In this workbook, we will be exploring the data from supermarket and grocery stores and seeing if we can train models to predict sales off of this current data set using several different methods. We will also evaluate which model is best at predicting said sales off of the given features. We will also need to evaluate which features are the most important in these models. 
+In this workbook, we will be exploring the data from supermarket and grocery stores and seeing if we can train models to predict sales off of this current data set using several different methods. There are steps to clean the data and also prepare it for machine learning. We will also evaluate which model is best at predicting said sales off of the given features. We will also need to evaluate which features are the most important in these models. 
 
 ## Exploring the data
 We first need to better understand the data and make sure that the data is clean and ready to be analyzed. Once that is done, we need to see if there are 
@@ -49,6 +49,7 @@ See below Figure 5: for the example for Supermarket Type 3
 
 ## Machine Learning and Predictions
 Let's start diving into machine learning and whether we can train the data to help us predict item sales. 
+We end up prepping the data by one hot encoding all the categorical features that are within the data set. 
 We will go through 4 different machine learning models of predicting Item Sales based off of selected features. 
 The four models are: 
 1) Linear Regression
@@ -72,7 +73,7 @@ Figure 6: Max Depth optimization for Random Forest/Decision Tree Model
 
 Lastly, just out of curiosity, I look into the top features based off of importance in the Random Forests model. 
 We see that the values are pretty darn similar to the correlations we looked at before where Item_MRP is clearly the strongest
-in predicting Item Sales. 
+in predicting Item Sales. I decide not to get rid of any of the features because I am unsure of what the threshold should be in removing them. 
 
 Figure 7: Top 10 Feature Importance for the Random Forest Model
 
