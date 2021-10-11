@@ -49,7 +49,8 @@ See below Figure 5: for the example for Supermarket Type 3
 
 ## Machine Learning and Predictions
 Let's start diving into machine learning and whether we can train the data to help us predict item sales. 
-We end up prepping the data by one hot encoding all the categorical features that are within the data set. 
+We end up prepping the data by one hot encoding all the categorical features that are within the data set. This will allow the computer to understand the categorical 
+variables and make predictions off of them. 
 We will go through 4 different machine learning models of predicting Item Sales based off of selected features. 
 The four models are: 
 1) Linear Regression
@@ -82,12 +83,12 @@ Figure 7: Top 10 Feature Importance for the Random Forest Model
 
 ## Conclusion
 
-Once we have run through all 4 models, we find that although not perfect in it's predictions and not optimal, the Random Forests model is the best 
+Once we have run through all 4 models, we find that, although not perfect in it's predictions and not optimal, the Random Forests model is the best 
 fit for predicting sales in comparison to the other 3 models. Both the Decision Tree and Random Forest model show promise in the R2 values, but the Random Forest is 
 ever so slightly better. Although they aren't perfect, the training and test scores for these models are relatively close, which suggests that predicting on the
 test set is pretty on par with the training set. These two models(Regression decision tree & Random forests) also do much better than the simple linear regression model, 
 where the R2 value for the test set proved it was unsuccessful at predictions. We can say that from the random forests model, that 60% of the variation within
-the prediction in the item_outlet_sales can be accounted for by the features we selected for this model. 
+the prediction in the item_outlet_sales can be accounted for by the features we selected for this model.
 In addition, we can say that the variation in error on any predictions made off of this model, given by the RMSE is about plus or minus $667 in item sales. 
 
 
