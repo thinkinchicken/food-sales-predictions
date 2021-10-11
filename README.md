@@ -1,7 +1,9 @@
 # Food Sales Predictions
 ## Overview
 Sales prediction for food items sold at various grocery and supermarket stores. 
-In this workbook, we will be exploring the data from supermarket and grocery stores.
+In this workbook, we will be exploring the data from supermarket and grocery stores and then seeing if we can train models to predict sales off of this current data set using several different methods. We will also evaluate which model is best at predicting said sales off of the given features. 
+
+## Exploring the data
 We first need to better understand the data and make sure that the data is clean and ready to be analyzed. Once that is done, we need to see if there are 
 any strong relationships or correlations amongst the different attributes found within this dataset. 
 Below is an example of the columns and the type of data we are looking at:
@@ -39,7 +41,7 @@ See below Figure 5: for the example for Supermarket Type 3
 ![image](https://user-images.githubusercontent.com/89652123/136721315-64e6338a-f12a-4d6a-8b29-8c57966997e3.png)
 
 
-
+## Machine Learning and Predictions
 Let's start diving into machine learning and whether we can train the data to help us predict item sales. 
 We will go through 4 different machine learning models of predicting Item Sales based off of selected features. 
 The four models are: 
