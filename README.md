@@ -67,6 +67,8 @@ error is to be expected from each of these models.
 
 A couple of hyperparameters needed to be altered for the Random Forest model/Decision Tree model in order for it to have the highest R2 value. 
 We ran a function in order to see the max depth of the tree that would optimize our R2 value and we found it to be max_depth = 5. 
+Our R2 value for the train set was 0.62 and R2 for the test set was 0.60 for the random Forest model. 
+Our RMSE for the random forest model with a max depth of 5 was 668.
 
 Figure 6: Max Depth optimization for Random Forest/Decision Tree Model 
 
